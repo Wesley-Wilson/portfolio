@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #2F4136;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.container-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.container-profile img {
+  margin-top: 10px;
+  width: 150px;
+}
+.container-profile h1 {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+.container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  gap: 20px;
+}
+.container ul li {
+  box-shadow: 8px 8px 0 0 #89CDFC;
+}
+.container ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 350px;
+  height: 50px;
+  text-decoration: none;
+  color: #2F4136;
+  background: #FFFFFF;
+  border: 3px solid #2F4136;
+  font-size: 1.2rem;
+}
+.container ul li a:hover {
+  transform: translateX(3px) translateY(3px);
+}
+.container span {
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

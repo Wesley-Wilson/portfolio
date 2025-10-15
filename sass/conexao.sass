@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
+ 
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Roboto',sans-serif
+
+
+//variables 
+$primary-color: #2F4136
+$secondary-color: #89CDFC
+$third-color: #FFFFFF
+
+//mixin
+@mixin flex-center 
+  display: flex
+  justify-content: center
+  align-items: center
+
+body 
+  background: $primary-color
+  @include flex-center
+  margin: 15
+
+.container 
+  @include flex-center
+  flex-direction: column
+  gap: 30px 
+  &-profile 
+    @include flex-center
+    flex-direction: column
+    gap: 8px
+    img
+      margin-top: 10px
+      width: 150px
+    h1
+      font-size: 2.5rem
+      color: $third-color
+      text-align: center
+  ul
+    @include flex-center
+    flex-direction: column
+    list-style: none
+    gap: 20px
+    li
+      box-shadow: 8px 8px 0 0 $secondary-color
+
+      a
+        @include flex-center
+        width: 100%
+        min-width: 350px
+        height: 50px
+        text-decoration: none
+        color: $primary-color
+        background: $third-color
+        border: 3px solid $primary-color 
+        font-size: 1.2rem
+      
+      a:hover 
+        transform: translateX(3px) translateY(3px)
+  span
+    color: $third-color
+    margin-bottom: 10px
+    
